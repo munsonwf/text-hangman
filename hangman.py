@@ -49,6 +49,13 @@ while turns > 0:
 
 	guesses += guess
 
+	# DEVELOPER TOOLS
+
+	# print failed # number of unguessed characters
+	# print turns # number of turns remaining
+	# print guess # print latest guess
+	# print guesses # what is already guessed
+
 	print
 
 	# takes care inconrrect terms - dont not count down for correct guesses.
@@ -60,7 +67,7 @@ while turns > 0:
 		# End game from bad guesses
 		if turns == 0:
 			print "It's over, %s.  This innocent man will be hung and it's all your fault!" % (name)
-	# Turn this on if you want correct guesses to decrease remaining chances. 
+	# EXTRA FEATURE: Turn this on if you want correct guesses to decrease remaining chances. 
 	# else: 
 	# 	turns -= 1
 	# 	print "Remaining turns >>%s<<." % (turns)
